@@ -158,7 +158,7 @@ class Ui_MainWindow(QWidget):
         chars = set('23456789')
         if any((c in chars) for c in s):
             messageBox = QMessageBox.critical(self, self.tr("Ошибка!"),
-                                              self.tr("Двоичное число может содержать только 0 или 1! "
+                                              self.tr("Двоичное число может содержать только 0 или 1! "),
                                                       "Проверьте ввод или измените систему счисления"),
                                               QMessageBox.Ok)
             return
